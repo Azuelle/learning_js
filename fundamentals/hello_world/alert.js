@@ -1,0 +1,1 @@
+alert("Hello world from JavaScript in an seperate file!");
