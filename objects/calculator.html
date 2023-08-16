@@ -6,7 +6,7 @@
                 alert("Invalid");
                 result = prompt(message);
             }
-            return result;
+            return +result;
         }
 
         let calculator = {
@@ -19,13 +19,12 @@
             },
             sum() {
                 this.result = this[1] + this[2];
-                alert(this.result);
+                alert("Sum: " + this.result);
                 return this.result;
             },
         }
 
         calculator.read();
-        calculator.sum();
         calculator.sum();
         calculator.show();
     </script>

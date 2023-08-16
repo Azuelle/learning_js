@@ -1,0 +1,47 @@
+<body>
+    <script>
+
+        function Calculator(init_value = 0) {
+            function read_number(message) {
+                let result = prompt("Input number " + message);
+                while (+result != +result || !result) {
+                    alert("Invalid");
+                    result = prompt("Input number " + message);
+                }
+                return +result;
+            }
+
+            this.result = init_value;
+            this.read_two = () => {
+                this.a = read_number("a");
+                this.b = read_number("b");
+            };
+            this.read_one = () => {
+                this.a = read_number("a");
+            };
+            this.show = () => alert(this.a + ", " + this.b + "\nLast result: " + this.result);
+            this.sum = () => {
+                this.result = this.a + this.b;
+                alert("Sum: " + this.result);
+                return this.result;
+            };
+            this.mul = () => {
+                this.result = this.a * this.b;
+                alert("Product: " + this.result);
+                return this.result;
+            };
+            this.acc_a = () => {
+                this.result += this.a;
+                alert("Total: " + this.result);
+                return this.result;
+            }
+        }
+
+        let calc = new Calculator(2);
+
+        calc.show();
+        calc.read_two();
+        calc.mul();
+        calc.acc_a();
+    </script>
+</body>
