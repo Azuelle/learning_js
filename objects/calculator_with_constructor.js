@@ -12,11 +12,11 @@ function Calculator(init_value = 0) {
 
     this.result = init_value;
     this.read_two = () => {
-        this.a = read_number("a");
-        this.b = read_number("b");
+        this.a = read_number("a\n");
+        this.b = read_number("b\n");
     };
     this.read_one = () => {
-        this.a = read_number("a");
+        this.a = read_number("a\n");
     };
     this.show = () => console.log(this.a + ", " + this.b + "\nLast result: " + this.result);
     this.sum = () => {

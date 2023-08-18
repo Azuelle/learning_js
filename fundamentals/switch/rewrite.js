@@ -1,6 +1,8 @@
 
+const prompt = require("prompt-sync")();
+
 /*** ORIGINAL ***
-let a = +prompt('a?', '');
+let a = +prompt('a?\n', '');
  
 if (a == 0) {
   console.log( 0 );
@@ -14,9 +16,7 @@ if (a == 2 || a == 3) {
 }
 */
 
-const prompt = require("prompt-sync")();
-
-let a = +prompt('a?', '');
+let a = +prompt('a?\n', '');
 
 switch (a) {
   case 0:
