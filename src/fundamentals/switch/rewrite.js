@@ -2,7 +2,7 @@
 const prompt = require("prompt-sync")();
 
 /*** ORIGINAL ***
-let a = +prompt('a?\n', '');
+let a = +prompt('a? ', '');
  
 if (a == 0) {
   console.log( 0 );
@@ -16,7 +16,7 @@ if (a == 2 || a == 3) {
 }
 */
 
-let a = +prompt('a?\n', '');
+let a = +prompt('a? ', '');
 
 switch (a) {
   case 0:

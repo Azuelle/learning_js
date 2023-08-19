@@ -25,7 +25,7 @@ function ask(question, yes, no) {
 }
 
 ask(
-    "Do you agree?\n",
+    "Do you agree? ",
     () => console.log("You agreed."),
     () => console.log("You canceled the execution.")
 );

@@ -1,12 +1,12 @@
 const prompt = require("prompt-sync")();
 
-let username = prompt("Input username\n", "Anonymous");
+let username = prompt("Input username: ", "Anonymous");
 if (!username)
     console.log("Operation canceled by user.");
 else if (username != "Azuelle")
     console.log("Unknown user. Operation aborted.");
 else {
-    let password = prompt("Input password\n");
+    let password = prompt("Input password: ");
     if (!password)
         console.log("Operation canceled by user.");
     else if (password != "totally_legit_pwd")

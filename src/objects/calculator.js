@@ -11,8 +11,8 @@ function read_number(message) {
 
 let calculator = {
     read() {
-        this[1] = read_number("First\n");
-        this[2] = read_number("Second\n");
+        this[1] = read_number("First: ");
+        this[2] = read_number("Second: ");
     },
     show() {
         console.log(this[1] + ", " + this[2] + "\nLast result: " + this.result);
