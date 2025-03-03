@@ -17,7 +17,7 @@ async function loadJson(url) {
 // Ask for a user name until github returns a valid user
 async function demoGithubUser() {
     while (true) {
-        let name = prompt("Enter a name?", "iliakan");
+        let name = prompt("Enter a name: ", "iliakan");
         try {
             let user = await loadJson(`https://api.github.com/users/${name}`);
             console.log(`Full name: ${user.name}.`);
@@ -32,4 +32,8 @@ async function demoGithubUser() {
     }
 }
 
-demoGithubUser();
+try {
+    demoGithubUser();
+} catch (err) {
+    console.log(err.Error);
+}
